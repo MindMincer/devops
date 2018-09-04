@@ -12,6 +12,6 @@ server {
     }
 
     location /static {
-        alias {{ appdata_dir }}/static;
+        alias {{ appdata_dir }}/{{ app_src_dir }}/static;
     }
 }
