@@ -1,0 +1,16 @@
+---
+app_name: my_uwsgi_app
+app_package: wsgi
+app_callable: app
+base_dir: '/srv/{{ app_name }}'
+appdata_dir: '{{ base_dir }}/appdata'
+nginx_server_name: 'localhost {{ app_name }}.local'
+# This affects HTTP only. HTTPS requires manual config.
+# Most people want to use 80 here.
+nginx_http_port: 80
+uwsgi_module: '{{ app_package }}:{{ app_callable }}'
+uwsgi_processes: 1
+uwsgi_threads: 1
+uwsgi_env: []
+git_repo: https://github.com/MindMincer/devops
+git_branch: master
