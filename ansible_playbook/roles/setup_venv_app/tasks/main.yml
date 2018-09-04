@@ -14,7 +14,7 @@
     version: '{{ git_branch }}'
 
 - name: Install requirements.txt
-  command: "'{{ base_dir }}/bin/pip' install -r '{{ appdata_dir }}/{{ app_src_dir }}/requirements.txt'"
+  command: "'{{ base_dir }}/bin/pip' install -r '{{ appdata_dir }}/requirements.txt'"
 
 - name: Set permissions for base directory
   file:
