@@ -1,11 +1,4 @@
 ---
-- name: Replace global nginx config with clean (hostless) default
-  copy:
-    src: '{{ item }}'
-    dest: /etc/nginx/nginx.conf
-    owner: root
-    group: root
-    mode: 0644
 
 - name: Create nginx config
   template:
