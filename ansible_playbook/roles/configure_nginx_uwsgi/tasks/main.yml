@@ -6,9 +6,6 @@
     owner: root
     group: root
     mode: 0644
-  with_fileglob:
-    - 'files/nginx_hostless_{{ ansible_distribution }}.conf'
-  when: nginx_hostless_global_config
 
 - name: Create nginx config
   template:
