@@ -11,7 +11,4 @@ server {
         uwsgi_pass unix:{{ base_dir }}/uwsgi.sock;
     }
 
-    location /static {
-        alias {{ appdata_dir }}/{{ app_src_dir }}/static;
-    }
 }
