@@ -39,7 +39,7 @@ urls = [
     (r'hello/(.+)$', hello)
 ]
 
-def application(environ, start_response):
+def app(environ, start_response):
     """
     The main WSGI application. Dispatch the current request to
     the functions from above and store the regular expression
