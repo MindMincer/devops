@@ -1,2 +1,3 @@
 [nginx-uwsgi]
-localhost
+webserver1 ansible_ssh_host=10.142.0.2
+webserver2 ansible_ssh_host=10.142.0.8
