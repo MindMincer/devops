@@ -39,7 +39,7 @@ urls = [
     (r'hello/(.+)$', hello)
 ]
 
-def app(environ, start_response):
+def application(environ, start_response):
     """
     The main WSGI application. Dispatch the current request to
     the functions from above and store the regular expression
@@ -55,3 +55,7 @@ def app(environ, start_response):
             environ['myapp.url_args'] = match.groups()
             return callback(environ, start_response)
     return not_found(environ, start_response)
+
+def app(environ, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html')])
+    return ["<h1 style='color:blue'>Hello There!</h1>"]
