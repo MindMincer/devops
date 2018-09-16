@@ -1,3 +1,3 @@
 [nginx-uwsgi]
 webserver3 ansible_ssh_host=10.142.0.2
-webserver3 ansible_ssh_host=10.142.0.8
+webserver4 ansible_ssh_host=10.142.0.8
