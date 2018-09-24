@@ -14,4 +14,5 @@ plugins = {{ uwsgi_plugins }}
 logger = file:{{ base_dir }}/uwsgi.log
 {% for env in uwsgi_env %}
 env = {{ env }}
+socket-timeout = 65
 {% endfor %}
