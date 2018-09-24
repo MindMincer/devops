@@ -15,8 +15,8 @@
   become: yes
   become_user: root
   roles:
-#      - install_CentOS
-     - setup_venv_app
-     - patch_config_CentOS_Fedora
-     - configure_nginx_uwsgi
-     - start_services
+    - install_CentOS
+    - setup_venv_app
+    - patch_config_CentOS_Fedora
+    - configure_nginx_uwsgi
+    - start_services
