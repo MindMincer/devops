@@ -7,7 +7,7 @@
 
 - name: Install packages (CentOS)
   yum:
-    name: python27,python27-pip,uwsgi,uwsgi-plugin-python2,uwsgi-logger-file,nginx,git,wget
+    name: python,python-pip,uwsgi,uwsgi-plugin-python2,uwsgi-logger-file,nginx,git,wget
     state: present
     update_cache: yes
 
